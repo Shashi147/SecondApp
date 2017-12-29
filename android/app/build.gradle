@@ -147,7 +147,14 @@ android {
     }
     productFlavors {
         flavor {
+            minSdkVersion 18
+            signingConfig signingConfigs.config
+            targetSdkVersion 26
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
