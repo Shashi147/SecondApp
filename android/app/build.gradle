@@ -99,9 +99,8 @@ android {
         config {
             keyAlias 'Codewave'
             keyPassword 'codewave'
-            storeFile file('C:/Users/nitin naik/Desktop/TestingKeys/SecondAppKey.jks')
+            storeFile file('C:/Users/nitin naik/Desktop/TestingKeys/FinalKey.jks')
             storePassword 'codewave'
-
         }
     }
     compileSdkVersion 26
