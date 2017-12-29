@@ -6,6 +6,7 @@
 
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View, Button } from "react-native";
+import Codepush from "react-native-code-push";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -14,14 +15,14 @@ const instructions = Platform.select({
     "Shake or press menu button for dev menu"
 });
 
-export default class App extends Component<{}> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Button title="Hello" />
+        <Button title="Hello" onPress={() => Codepush.sync} />
       </View>
     );
   }
